@@ -1,4 +1,4 @@
-#IS demo:
+# IS demo:
 
 oc new-project dockerfile-build-demo
 
