@@ -1,4 +1,4 @@
-FROM centos
+FROM docker.io/centos
 LABEL description="This is a test image to test disks"
 RUN yum install -y sysstat && \
     yum install -y sudo && \
