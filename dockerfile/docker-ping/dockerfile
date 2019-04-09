@@ -13,3 +13,5 @@ RUN mkdir /Data && \
 USER docker
 
 ENTRYPOINT ping onet.pl
+
+
