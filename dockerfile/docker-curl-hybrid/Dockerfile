@@ -12,4 +12,4 @@ RUN mkdir /Data && \
     chmod +t /Data
 USER docker
 #CMD ["/usr/bin/ping","onet.pl"]
-ENTRYPOINT while true; do curl http://$CLOUD_TASKS_IP/$(awk -v min=4000 -v max=6000 'BEGIN{srand(); print int(min+rand()*(max-min+1))}'); done;
+ENTRYPOINT while true; do curl http://$CLOUD_TASKS_IP/$(awk -v min=4000 -v max=6000 'BEGIN{srand(); print int(min+rand()*(max-min+1))}') > /dev/null; done;
