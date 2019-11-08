@@ -12,4 +12,5 @@ RUN mkdir /Data && \
     chmod +t /Data
 USER docker
 #CMD ["/usr/bin/ping","onet.pl"]
-ENTRYPOINT while true; do /usr/bin/curl http://bluegreen-scm-web-hooks.openshift.lab.is/ >> /Data/dumpfile; done;
+#ENTRYPOINT while true; do /usr/bin/curl http://bluegreen-scm-web-hooks.openshift.lab.is/ >> /Data/dumpfile; done;
+ENTRYPOINT while true; do /usr/bin/curl http://application-api-helloworld-test.apps.dev.peum.local/application >> /dev/null done;
