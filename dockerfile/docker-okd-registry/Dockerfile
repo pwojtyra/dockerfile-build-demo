@@ -1,0 +1,1 @@
+FROM docker-registry-default.apps.dev.peum.local/tst-lfr-123456/portal:7.1.3-init
